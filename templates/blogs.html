@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+<ul>
+{% for blog in blogs %}
+<li>{{ blog.text }} posted by {{ blog.user.username }}
+{% endfor %}
+{% endblock %}

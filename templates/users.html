@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Users:
+<ul>
+{% for user in users %}
+<li>{{user.username}} {{ vars(user) }}
+{% endfor %}
+{% endblock %}
